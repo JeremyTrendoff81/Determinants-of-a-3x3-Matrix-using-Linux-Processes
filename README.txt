@@ -16,7 +16,7 @@ if this has not been done already.
 
 2. Run the make command in the terminal to create the executable.
 
-3. Run the executable by using ./Assignment_1 in the terminal. This will run the program 
+3. Run the executable by using ./DET in the terminal. This will run the program 
 with the mandatory test data. 
 ------------------------------------------------------------------------
 
