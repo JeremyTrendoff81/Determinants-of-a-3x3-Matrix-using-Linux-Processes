@@ -146,7 +146,6 @@ int main() {
 
 	// Print elapsed time of performing all the operations 
 	printf("Elapsed Time: %ld micro sec\n", ((end.tv_sec * MICRO_SEC_IN_SEC + end.tv_usec) - (start.tv_sec * MICRO_SEC_IN_SEC + start.tv_usec)));
-	printf("Test Print");
 
 	exit(EXIT_SUCCESS);
 }
