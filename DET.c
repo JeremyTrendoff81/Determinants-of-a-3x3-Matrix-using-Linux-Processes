@@ -19,22 +19,6 @@
 // Used for the time calculation.
 #define MICRO_SEC_IN_SEC 1000000
 
-// Get the largest number in a 3x3 matrix row.
-int get_largest_number_in_matrix_row(int matrix[3][3], int row)
-{
-	int largest_number = matrix[row][0];
-
-	for (int i = 0; i < 3; i++)
-	{
-		if (largest_number < matrix[row][i])
-		{
-			largest_number = matrix[row][i];
-		}
-	}
-
-	return largest_number;
-}
-
 // Get the largest number in an array of length 3.
 int get_largest_number(int arr[3])
 {
@@ -49,6 +33,12 @@ int get_largest_number(int arr[3])
 	}
 
 	return largest_number;
+}
+
+// Get the largest number in a 3x3 matrix row.
+int get_largest_number_in_matrix_row(int matrix[3][3], int row)
+{
+	return get_largest_number(matrix[row]);
 }
 
 // Print a 3x3 matrix.
